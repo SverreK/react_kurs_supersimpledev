@@ -13,7 +13,7 @@ Per nå dekker koden i dette repoet:
 
 Repoet vil bli oppdatert etter hvert som jeg kommer videre i kurset
 
-##Kursoversikt
+## Kursoversikt
 
 1. React Basics og JSX
 2. Components og Props
