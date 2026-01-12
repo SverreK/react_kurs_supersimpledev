@@ -1,0 +1,58 @@
+::placeholder {
+  color: grey;
+}
+
+.input-email {
+  border-radius: 5px;
+  border-width: thin;
+  margin-bottom: 5px;
+  max-width: 160px;
+  padding: 5px 10px;
+}
+
+.input-password {
+  border-radius: 5px;
+  border-width: thin;
+  max-width: 160px;
+  margin-bottom: 5px;
+  padding: 5px 10px;
+}
+
+.input-password:focus,
+.input-email:focus {
+  border-width: 2px;
+  border-color: #007bff;
+  outline: none;
+}
+
+.button-show {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 10px;
+  padding: 1px 6px;
+  cursor: pointer;
+}
+
+.button {
+  margin-top: 10px;
+}
+
+.button-login {
+  color: white;
+  background-color: rgb(0, 123, 255);
+  margin-right: 7px;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+
+.button-signup {
+  color: white;
+  background-color: rgb(0, 123, 255);
+  margin-right: 7px;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 5px;
+  cursor: pointer;
+}

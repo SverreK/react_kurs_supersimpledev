@@ -1,15 +1,19 @@
 # SuperSimpleDev React kurs
+
 Dette repoet inneholder kode og øvelser jeg har laget mens jeg følger React-kurset til SuperSimpleDev. Formålet med repoet er å dokumentere progresjonen min i React og samle eksempler på konsepter jeg lærer underveis.
 
 ## Status
-3 av ca. 11 timer fullført
+
+5 av ca. 11 timer fullført
 
 Per nå dekker koden i dette repoet:
 
-* React basics og JSX
-* Components og props
-* State og event handlers
-* Starten på chatbot-prosjektet
+- React basics og JSX
+- Components og props
+- State og event handlers
+- Chatbot-prosjektet
+- CSS i React og Hooks
+- Riktig React-oppsett med Vite
 
 Repoet vil bli oppdatert etter hvert som jeg kommer videre i kurset
 
@@ -30,15 +34,18 @@ Repoet vil bli oppdatert etter hvert som jeg kommer videre i kurset
 13. AI med React
 
 ## Teknologier brukt
-* React
-* JavaScript
-* JSX
-* CSS
-* Vite
-* Git og GitHub
+
+- React
+- JavaScript
+- JSX
+- CSS
+- Vite
+- Git og GitHub
 
 ## Mål
+
 Målet mitt er å lære og bruke React til å lage:
-* Dashboards
-* Nettsider
-* Prosjekter til eget bruk
+
+- Dashboards
+- Nettsider
+- Prosjekter til eget bruk

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lesson4-Exercise2</title>
+    <style>
+      body {
+        font-family: Arial;
+      }
+
+      .title {
+        font-weight: bold;
+      }
+
+      ::placeholder {
+        color: grey;
+      }
+
+      .input-email {
+        border-radius: 5px;
+        border-width: thin;
+        margin-bottom: 5px;
+        max-width: 160px;
+        padding: 5px 10px;
+      }
+
+      .password-row {
+        display: flex;
+        align-items: start;
+      }
+
+      .input-password {
+        border-radius: 5px;
+        border-width: thin;
+        max-width: 160px;
+        margin-bottom: 5px;
+        padding: 5px 10px;
+      }
+
+      .input-password:focus,
+      .input-email:focus {
+        border-width: 2px;
+        border-color: #007bff;
+        outline: none;
+      }
+
+      .button-show {
+        margin-left: 5px;
+        margin-top: 5px;
+        font-size: 10px;
+        padding: 1px 6px;
+        cursor: pointer;
+      }
+
+      .button {
+        margin-top: 10px;
+      }
+
+      .button-login {
+        color: white;
+        background-color: rgb(0, 123, 255);
+        margin-right: 7px;
+        border-radius: 6px;
+        border: none;
+        padding: 5px 5px;
+        cursor: pointer;
+      }
+
+      .button-signup {
+        color: white;
+        background-color: rgb(0, 123, 255);
+        margin-right: 7px;
+        border-radius: 6px;
+        border: none;
+        padding: 5px 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/chatbot.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      function SignIn() {
+        const [showPassword, setShowPassword] = React.useState(false);
+
+        const toggleShowPassword = () =>
+          showPassword ? setShowPassword(false) : setShowPassword(true);
+        return (
+          <div className="login-section">
+            <p className="title">Hello, Welcome to my website</p>
+            <div>
+              <input className="input-email" placeholder="Email" />
+            </div>
+
+            <div className="password-row">
+              <input
+                type={showPassword ? 'text' : 'password'}
+                className="input-password"
+                placeholder="Password"
+              />
+              <button className="button-show" onClick={toggleShowPassword}>
+                {showPassword ? 'Hide' : 'Show'}
+              </button>
+            </div>
+            <div className="button">
+              <button className="button-login">Login</button>
+              <button className="button-signup">Sign Up</button>
+            </div>
+          </div>
+        );
+      }
+
+      function App() {
+        return <SignIn />;
+      }
+
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
