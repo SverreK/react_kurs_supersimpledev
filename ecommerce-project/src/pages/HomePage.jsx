@@ -2,15 +2,6 @@ import { Header } from '../components/Header';
 import { products } from '../../starting-code/data/products';
 import './HomePage.css';
 
-function centsToDollars(cents) {
-  return cents / 100;
-}
-
-function getRatingImage(product) {
-  const rating = product.rating.stars * 10;
-  return `/images/ratings/rating-${rating}.png`;
-}
-
 export function HomePage() {
   return (
     <>
